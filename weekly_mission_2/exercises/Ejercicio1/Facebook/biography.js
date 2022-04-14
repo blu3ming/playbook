@@ -5,7 +5,7 @@ const biography = {
     age: 24,
     biography: "Ingeniero en Computación. Programador en LaunchX. Amanter de la tecnología.",
     getMainData: function(){
-        return `The user ${this.user} says "${this.biography}"`
+        return `The user ${this.user} has the bio: "${this.biography}"`
     }
 }
 
