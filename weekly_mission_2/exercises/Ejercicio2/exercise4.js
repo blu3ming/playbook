@@ -6,4 +6,4 @@ const stackWithJS = explorers.filter(usuario =>
 
 //console.log(stackWithJS)
 console.log("Usuarios con 'JS' en su stack")
-console.log(stackWithJS.forEach((usuario) => console.log(`El stack del usuario ${usuario.name} es: ${usuario.stack}.`)))
+stackWithJS.forEach((usuario) => console.log(`El stack del usuario ${usuario.name} es: ${usuario.stack}.`))
