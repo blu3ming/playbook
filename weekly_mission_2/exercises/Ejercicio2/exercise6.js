@@ -1,7 +1,9 @@
 import explorers from './listaExplorers.js'
 
-const totalExercises = explorers.map(completados => completados.exercises_completed)
-const completedExercises = totalExercises.reduce((acc, ejercicios) => acc + ejercicios,0)
+//const totalExercises = explorers.map(completados => completados.exercises_completed)
+//const completedExercises = totalExercises.reduce((acc, ejercicios) => acc + ejercicios,0)
+
+const completedExercises = explorers.reduce((acc, ejercicios) => acc + ejercicios.exercises_completed,0)
 
 console.log(`Total de ejercicios completados por los explorers: ${completedExercises}`)
 //console.log(totalExercises)
